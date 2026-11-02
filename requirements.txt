@@ -1,0 +1,12 @@
+# Entorno: Databricks (Unity Catalog, Spark >= 3.5, Delta Lake).
+# PySpark, Delta Lake y Spark MLlib vienen incluidos en el runtime de Databricks.
+# En Databricks solo hay que instalar huggingface_hub (%pip install huggingface_hub).
+
+huggingface_hub>=0.23
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+
+# Solo para ejecutar fuera de Databricks (local o en otro clúster):
+pyspark>=3.5,<4.0
+delta-spark>=3.1,<4.0
